@@ -1,5 +1,5 @@
 // project.js - purpose and description here
-// Author: Your Name
+// Author: Jason Torres
 // Date:
 
 // NOTE: This is how we might start a basic JavaaScript OOP project
@@ -15,7 +15,7 @@ function main() {
     people: ["Rebels", "Resistance", "Galaxy", "Clones", "Jedi"],
     ship: ["cargo ship", "starfighter", "cruiser", "bomber", "freighter", "starship"],
     baddies: ["The Empire", "The First Order", "Sith", "Sith Troopers"],
-    message: ["call", "post", "decree", "message", "emergency", "important message","alarm", "commlink"],
+    message: ["call", "post", "decree", "message", "emergency", "important message","alarm", "commlink", "transmission"],
     
   };
   
