@@ -53,11 +53,11 @@ function draw() {
   rect(0, 0, width, height / 2);
   
   fill(sun1Color); // Yellow color
-  ellipse(width * .9, height * 0.25, 20, 20); // Adjust position as needed
+  ellipse(width * .9, height * 0.25, 50, 50); // Adjust position as needed
 
   // Draw second sun
   fill(sun2Color); // Orange color
-  ellipse(width * 0.8, height * 0.15, 30, 30); // Adjust position as needed
+  ellipse(width * 0.88, height * 0.15, 70, 70); // Adjust position as needed
 
 
   fill(sandColor);
@@ -81,7 +81,7 @@ function draw() {
   // Draw top half of hut (half circle)
   let hutTopX = width * 0.2; // X-coordinate of the center of the hut top
   let hutTopY = height * 1; // Y-coordinate of the center of the hut top
-  let hutTopRadius = 90; // Radius of the hut top
+  let hutTopRadius = 200; // Radius of the hut top
   arc(hutTopX, hutTopY, hutTopRadius * 2, hutTopRadius * 2, PI, TWO_PI, OPEN); // Increase the Y-radius to make it more round
 
   // Draw rectangular bit coming out of hut side
