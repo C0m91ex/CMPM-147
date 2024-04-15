@@ -57,7 +57,7 @@ function draw() {
 
   // Draw second sun
   fill(sun2Color); // Orange color
-  ellipse(width * 0.88, height * 0.15, 70, 70); // Adjust position as needed
+  ellipse(width * 0.8, height * 0.15, 70, 70); // Adjust position as needed
 
 
   fill(sandColor);
@@ -86,7 +86,7 @@ function draw() {
 
   // Draw rectangular bit coming out of hut side
   let rectWidth = 30; // Width of the rectangular bit
-  let rectHeight = 90; // Height of the rectangular bit
+  let rectHeight = 140; // Height of the rectangular bit
   rect(hutTopX + hutTopRadius - rectWidth / 2, hutTopY - rectHeight / 2, rectWidth, rectHeight); // Adjust position to make it come out of the side
   
 }
