@@ -7,34 +7,14 @@
 
 // Constants - User-servicable parts
 // In a longer project I like to put these in a separate file
-const VALUE1 = 1;
-const VALUE2 = 2;
-
-// Globals
-let myInstance;
-let canvasContainer;
-var centerHorz, centerVert;
+/* exported setup, draw */
 
 let seed = 239;
 
-const sandColor = '#8e5d54';
-const duneColor = '#a86a5c';
-const skyColor = '#ebcfc2';
-const sun1Color = '#fbffe2';
-const sun2Color = '#e8aa82';
-const hutColor = '#604432';
-
-
-class MyClass {
-    constructor(param1, param2) {
-        this.property1 = param1;
-        this.property2 = param2;
-    }
-
-    myMethod() {
-        // code to run when method is called
-    }
-}
+const grassColor = "#74740d";
+const skyColor = "#69ade4";
+const stoneColor = "#858290";
+const treeColor = "#33330b";
 
 function resizeScreen() {
   centerHorz = canvasContainer.width() / 2; // Adjusted for drawing logic
@@ -44,27 +24,21 @@ function resizeScreen() {
   // redrawCanvas(); // Redraw everything based on new size
 }
 
-// setup() function is called once when the program starts
-function setup() {
-  // place our canvas, making it fit our container
+// listener for reimagine button
+$("#reimagine").click(function() {
+  seed++;
+});
+
+function setup() {  // place our canvas, making it fit our container
   canvasContainer = $("#canvas-container");
   let canvas = createCanvas(canvasContainer.width(), canvasContainer.height());
   canvas.parent("canvas-container");
-  // resize canvas is the page is resized
-
-  // create an instance of the class
-  myInstance = new MyClass("VALUE1", "VALUE2");
-
   $(window).resize(function() {
     resizeScreen();
   });
   resizeScreen();
-
-  createCanvas(400, 200);
-  createButton("reimagine").mousePressed(() => seed++);
 }
 
-// draw() function is called repeatedly, it's the main animation loop
 function draw() {
   
   randomSeed(seed);
@@ -114,6 +88,7 @@ function draw() {
   rect(hutTopX + hutTopRadius - rectWidth / 2, hutTopY - rectHeight / 2, rectWidth, rectHeight); // Adjust position to make it come out of the side
   
 }
+
 
 // mousePressed() function is called once after every time a mouse button is pressed
 function mousePressed() {
