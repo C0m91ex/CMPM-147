@@ -11,10 +11,12 @@
 
 let seed = 239;
 
-const grassColor = "#74740d";
-const skyColor = "#69ade4";
-const stoneColor = "#858290";
-const treeColor = "#33330b";
+const sandColor = '#8e5d54';
+const duneColor = '#a86a5c';
+const skyColor = '#ebcfc2';
+const sun1Color = '#fbffe2';
+const sun2Color = '#e8aa82';
+const hutColor = '#604432';
 
 function resizeScreen() {
   centerHorz = canvasContainer.width() / 2; // Adjusted for drawing logic
