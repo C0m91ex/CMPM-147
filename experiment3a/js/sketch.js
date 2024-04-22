@@ -49,6 +49,8 @@ function draw() {
 /* exported generateGrid, drawGrid */
 /* global placeTile */
 
+background(255);
+
 function generateGrid(numCols, numRows) {
   let grid = [];
 
